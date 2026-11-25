@@ -1,0 +1,21 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+backend/jukebox.db
+.DS_Store
+
+# Python virtual environments
+backend/venv/
+frontend/node_modules/
+
+# Environment and secret files
+.env.*
+!.env.example
+
+# Python cache
+.pytest_cache/
+.mypy_cache/

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+body{margin:0;color:#e6f1ff;font-family:Inter,system-ui,sans-serif;background:#04060f;
+ background-image:radial-gradient(ellipse 70% 40% at 50% 112%,#1b6fd8 0%,#0a2a6b 35%,transparent 70%),radial-gradient(circle at 85% 0%,#3b1d7a55,transparent 45%)}
+.glass{background:rgba(10,16,40,.62);backdrop-filter:blur(14px);border:1px solid rgba(80,140,255,.35);border-radius:18px;box-shadow:0 0 24px rgba(60,110,255,.18);transition:box-shadow .2s,border-color .2s}
+.glass:hover{border-color:rgba(0,229,255,.6);box-shadow:0 0 30px rgba(0,229,255,.25)}
+.btn{background:linear-gradient(90deg,#1e6bff,#7b3cff);border-radius:12px;padding:.45rem .9rem;font-weight:600;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+.inp{background:#070c22;border:1px solid #2b4fa8;border-radius:12px;padding:.5rem .8rem;color:#fff;outline:none}.inp:focus{border-color:#00e5ff}
+.leaflet-container{border-radius:14px;background:#02040c}
+@keyframes float{50%{transform:translateY(-7px)}}.float{animation:float 4s ease-in-out infinite}a.glass:hover{transform:translateY(-4px)}
+.stars{background-image:radial-gradient(1.5px 1.5px at 10% 20%,#fff,transparent),radial-gradient(1px 1px at 30% 70%,#cfe3ff,transparent),radial-gradient(1.5px 1.5px at 55% 15%,#fff,transparent),radial-gradient(1px 1px at 75% 40%,#cfe3ff,transparent),radial-gradient(2px 2px at 90% 80%,#fff,transparent),radial-gradient(1px 1px at 20% 90%,#fff,transparent),radial-gradient(1.5px 1.5px at 65% 85%,#cfe3ff,transparent),radial-gradient(1px 1px at 45% 45%,#fff,transparent);animation:tw 5s ease-in-out infinite}@keyframes tw{50%{opacity:.45}}
+
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url(/earth.jpg) no-repeat right -6vw top -4vh / min(88vh,860px);mix-blend-mode:screen;opacity:var(--eo,.85);transition:opacity .4s}
